@@ -11,6 +11,7 @@ import { ErrorInterceptorProvider } from '../interceptors/error-interceptor';
 import { AuthService } from '../services/auth.service';
 import { StorageService } from '../services/storage.service';
 import { ClienteService } from '../services/domain/cliente.service';
+import { AuthInterceptorProvider } from '../interceptors/auth-interceptor';
 
 // Decorator é uma anotação que vai ter configurações para alterar a classe
 @NgModule({
@@ -31,10 +32,11 @@ import { ClienteService } from '../services/domain/cliente.service';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CategoriaService,
+    AuthInterceptorProvider,
+    ErrorInterceptorProvider,
     AuthService,
     StorageService,
-    ClienteService,
-    ErrorInterceptorProvider
+    ClienteService
   ]
 })
 export class AppModule {}
