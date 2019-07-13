@@ -4,13 +4,6 @@ import { CategoriaService } from '../../services/domain/categoria.service';
 import { CategoriaDTO } from '../../models/categoria.dto';
 import { API_CONFIG } from '../../config/api.config';
 
-/**
- * Generated class for the CategoriasPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 // Para gerar um component pelo terminal basta usar o comando
 // ionic g page categorias --- nesse caso foi usado para gerar categorias
 @IonicPage()
