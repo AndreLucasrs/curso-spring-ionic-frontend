@@ -43,8 +43,8 @@ export class ProdutosPage {
     }
   }
 
-  showDatail() {
-    this.navCtrl.push('ProdutoDetailPage');
+  showDatail(produto_id: string) {
+    this.navCtrl.push('ProdutoDetailPage', {produto_id: produto_id});
   }
 
 }
